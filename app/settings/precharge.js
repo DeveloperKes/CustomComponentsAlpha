@@ -1,9 +1,7 @@
 import './oulet.complement.js';
 
-
 (async () => {
     const components = await fetchFiles('components');
-    console.log(components);
     for (const component of components) {
         if (component) {
             const path = `/app/${component}/${component.split('/').pop()}.controller.js`;
@@ -31,11 +29,11 @@ import './oulet.complement.js';
 })();
 
 async function fetchFiles(folder) {
-    const response = await fetch(`app/${folder}`);
+    const response = await fetch(`src/${folder}`);
     const html = await response.text();
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, 'text/html');
-    return Array.from(doc.querySelectorAll(`a[href*="app/${folder}/"]`)).map(a => a.getAttribute('href').slice(5));
+    return Array.from(doc.querySelectorAll(`a[href*="src/${folder}/"]`)).map(a => a.getAttribute('href').slice(5));
 }
 
 function extractName(file) {

@@ -1,3 +1,14 @@
+export class Router {
+    routes = [];
+    constructor() {
+
+    }
+    addRoutes(routes) {
+        if (Array.isArray(routes)) {
+            this.router = this.routes.concat(routes);
+        }
+    }
+}
 
 class CustomOutlet extends HTMLElement {
     constructor() {
@@ -6,8 +17,6 @@ class CustomOutlet extends HTMLElement {
     }
 
     connectedCallback() {
-        console.log('Se cargo el componente');
-        this.shadowRoot.innerHTML = '<h1>Hola</h1>'
     }
 }
 

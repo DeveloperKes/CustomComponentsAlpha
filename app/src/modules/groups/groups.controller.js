@@ -1,4 +1,4 @@
-import CustomAppModule from "/app/utils/custom_module.js";
+import CustomAppModule from "/app/settings/custom_module.js";
 const parameters = {
     templateUrl: 'groups.view.scss',
     stylesUrl: ['groups.styles.scss']

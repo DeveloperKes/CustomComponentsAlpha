@@ -1,4 +1,4 @@
-import CustomAppModule from "/app/utils/custom_module.js";
+import CustomAppModule from "/app/settings/custom_module.js";
 const parameters = {
     templateHTML: `<h1 class="title">Hola mundo</h1>`,
     stylesUrl: ['home.styles.scss']

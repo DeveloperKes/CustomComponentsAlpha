@@ -1,4 +1,4 @@
-import CustomAppComponent from "/app/utils/custom_component.js";
+import CustomAppComponent from "/app/settings/custom_component.js";
 const parameters = {
     templateUrl: 'field.view.scss',
     stylesUrl: ['field.styles.scss']
