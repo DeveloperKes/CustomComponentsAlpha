@@ -1,0 +1,30 @@
+{
+	"Create Component": {
+		"scope": "javascript",
+		"prefix": "__component",
+		"body": [
+			"import CustomAppComponent from \"/app/utils/custom_component.js\";",
+			"",
+			"class $1Component extends CustomAppComponent {",
+			"    constructor() {",
+			"        super('$2');",
+			"    }",
+			"}",
+			"export default $3Component;"
+		]
+	},
+	"Create Module": {
+		"scope": "javascript",
+		"prefix": "__module",
+		"body": [
+			"import CustomAppModule from \"/app/utils/custom_module.js\";",
+			"",
+			"class $1Module extends CustomAppModule {",
+			"    constructor() {",
+			"        super('$2');",
+			"    }",
+			"}",
+			"export default $3Module;"
+		]
+	}
+}

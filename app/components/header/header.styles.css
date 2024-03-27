@@ -1,0 +1,21 @@
+@import '/app/fonts/icons/style.css';
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 3.5rem;
+  background-color: #2d30cc;
+  color: #fefefe;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0px;
+}
+.header i {
+  font-size: 2rem;
+}
