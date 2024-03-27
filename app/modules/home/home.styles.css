@@ -1,0 +1,10 @@
+@import '/app/fonts/icons/style.css';
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  color: #2d30cc;
+}
